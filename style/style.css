@@ -1,0 +1,21 @@
+li:hover{
+    background-color: aliceblue;
+    border-radius: 15px;
+    list-style-type: none;
+}
+
+h1:hover{
+    background-color: aliceblue;
+    border-radius: 25px;
+
+}
+li{
+    list-style-type: none;
+
+}
+.center {
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
