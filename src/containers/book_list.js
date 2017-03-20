@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import BookListItem from '../components/book_list_item';
+import AddBookToList from '../components/add_book_to_list';
 
 class BookList extends Component {
 
@@ -10,17 +11,24 @@ class BookList extends Component {
         })
     }
 
-
     render() {
 
         return (
-            <div>
-                <h1>{this.props.name}:</h1>
-                <ul className="">{this.renderList()}</ul>
+            <div className="center">
+                <h3>{this.props.name}:</h3>
+                <table>
+                    <tbody>
+
+                        {this.renderList()}
+                    </tbody>
+                </table>
+                <AddBookToList/>
             </div>
         );
     }
 };
+//                <ul className="">{this.renderList()}</ul>
+
 
 function mapStateToProps(state) {
     return {

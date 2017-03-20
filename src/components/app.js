@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BookList from '../containers/book_list';
 import WelcomeComp from '../components/welcome_component';
+import SiginingUp from '../components/not_sign_in';
 
 
 export default class App extends Component {
@@ -10,13 +11,25 @@ export default class App extends Component {
 
     }
 
+    renderUserSituation(userName){
+        if (typeof userName ==='undefined') {
+            console.log(userName);
+            return <SiginingUp />;
+        }
+            return <WelcomeComp userName = {userName}/>;
 
+}
+
+//books={this.state.books}
     render() {
+        var userName = "mighty1617";
         return (
             <div>
-                <WelcomeComp userName="Mighty1617" />
-                <BookList name = "New York Times best sellers" books={this.state.books} />
+                {this.renderUserSituation(userName)}
+                <BookList name = "New York Times best sellers" />
             </div>
         );
     }
-}
+}////   books={this.state.books }
+// <WelcomeComp userName="Mighty1617" />
+

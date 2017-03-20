@@ -1,21 +1,59 @@
-li:hover{
+.add-button:hover .dropdown-content {
+    display: block;
+}
+.add-button{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.list-rows:hover{
     background-color: aliceblue;
-    border-radius: 15px;
-    list-style-type: none;
-}
-
-h1:hover{
-    background-color: aliceblue;
-    border-radius: 25px;
-
-}
-li{
     list-style-type: none;
 
 }
+.list-rows {
+    display: inline-block;
+
+}
+.list-td{
+    border-bottom: 1px solid #ddd;
+}
+
 .center {
+    border-radius: 15px;
     margin: auto;
     width: 50%;
     border: 1px solid black;
     padding: 10px;
 }
+.about-me-class{
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+}
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    min-width: 160px;
+    z-index: 1;
+    font-size: smaller;
+}
+
