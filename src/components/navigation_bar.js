@@ -3,30 +3,39 @@
  */
 
 import React from 'react';
+import SiginingUp from '../components/not_sign_in';
+import WelcomeComp from '../components/welcome_component';
 
 
-const navigationBar = () => {
+class navigationBar extends React.Component{
+    constructor (props)
+    {
+        super(props);
+        this.state = {userName:props.UserName}
+    }
+    renderUserSituation(userName){
+        if (typeof userName ==='undefined') {
+            console.log(userName);
+            return <SiginingUp />;
+        }
+        return <WelcomeComp userName = {userName}/>;
+
+    }
+    render() {
     return (
         <table className="navigation-bar-table">
             <tbody>
                 <tr>
                     <td className=".navigation-bar-td">
-                        <p>Profile </p>
-                    </td>
-                    <td className=".navigation-bar-td">
-                        <p>About us </p>
-                    </td>
-                    <td className=".navigation-bar-td">
-                        <p>Contact us </p>
-                    </td>
-                    <td className=".navigation-bar-td">
-                        <p>Search for a list </p>
+                        {this.renderUserSituation(this.state.userName)}
                     </td>
                 </tr>
             </tbody>
         </table>
     );
-};
+}
+}
+
 /**
  <div className="dropdown">
  <p>Profile</p>

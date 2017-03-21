@@ -12,14 +12,6 @@ export default class App extends Component {
 
     }
 
-    renderUserSituation(userName){
-        if (typeof userName ==='undefined') {
-            console.log(userName);
-            return <SiginingUp />;
-        }
-            return <WelcomeComp userName = {userName}/>;
-
-}
 
 //books={this.state.books}
     render() {
@@ -27,7 +19,6 @@ export default class App extends Component {
         return (
             <div>
                 <NavigationBar/>
-                {this.renderUserSituation(userName)}
                 <br />
                 <BookList name = "New York Times best sellers" />
             </div>
