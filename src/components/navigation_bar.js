@@ -11,7 +11,7 @@ class navigationBar extends React.Component{
     constructor (props)
     {
         super(props);
-        this.state = {userName:props.UserName}
+        this.state = {userName:props.userName}
     }
     renderUserSituation(userName){
         if (typeof userName ==='undefined') {

@@ -18,7 +18,7 @@ export default class App extends Component {
         var userName = "mighty1617";
         return (
             <div>
-                <NavigationBar/>
+                <NavigationBar userName = {userName}/>
                 <br />
                 <BookList name = "New York Times best sellers" />
             </div>
