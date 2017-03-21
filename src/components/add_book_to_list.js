@@ -16,7 +16,6 @@ const addBookToList = () => {
                 <input />
             </div>
         </div>
-
     );
 };
 
