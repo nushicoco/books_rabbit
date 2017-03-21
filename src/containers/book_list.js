@@ -18,7 +18,6 @@ class BookList extends Component {
                 <h3 className="headline">{this.props.name}:</h3>
                 <table>
                     <tbody>
-
                         {this.renderList()}
                     </tbody>
                 </table>
