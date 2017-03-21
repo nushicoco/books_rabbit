@@ -3,7 +3,7 @@ import BookList from '../containers/book_list';
 import WelcomeComp from '../components/welcome_component';
 import SiginingUp from '../components/not_sign_in';
 import NavigationBar from '../components/navigation_bar';
-
+import AddBook from '../components/add_book';
 
 export default class App extends Component {
 
@@ -11,7 +11,6 @@ export default class App extends Component {
         super(props);
 
     }
-
 
 //books={this.state.books}
     render() {
@@ -21,6 +20,7 @@ export default class App extends Component {
                 <NavigationBar userName = {userName}/>
                 <br />
                 <BookList name = "New York Times best sellers" />
+                <AddBook/>
             </div>
         );
     }
