@@ -1,8 +1,8 @@
 /**
  * Created by einav on 3/21/17.
  */
+/**
 import PopupModal from '../components/popup_modal';
-
 class AddBookModal extends PopupModal {
     constructor (props) {
         super(props);
@@ -29,3 +29,4 @@ class AddBookModal extends PopupModal {
 }
 
 export default PopupModal;
+ **/

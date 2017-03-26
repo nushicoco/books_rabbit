@@ -13,7 +13,7 @@ class welcomeComp extends Component {
     }
 
     onHover(event) {
-        console.log('hoverrrrr' + this.state.counter);
+        console.log('hover:' + this.state.counter);
         this.setState({counter : this.state.counter+1});
     }
 
