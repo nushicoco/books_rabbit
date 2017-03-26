@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import BookList from '../containers/book_list';
 import WelcomeComp from '../components/welcome_component';
 import SiginingUp from '../components/not_sign_in';
 import NavigationBar from '../components/navigation_bar';
-import AddBook from '../components/add_book';
+import TryBootstap from './tryBootstrap';
 
 export default class App extends Component {
 
@@ -17,10 +17,22 @@ export default class App extends Component {
         var userName = "mighty1617";
         return (
             <div>
-                <NavigationBar userName = {userName}/>
+                <NavigationBar userName={userName}/>
                 <br />
-                <BookList name = "New York Times best sellers" />
-                <AddBook/>
+                <table>
+                    <tr>
+                        <td>
+                            <BookList name="New York Times best sellers"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <TryBootstap/>
+                        </td>
+                    </tr>
+                </table>
+
+
             </div>
         );
     }
